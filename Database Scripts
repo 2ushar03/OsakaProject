@@ -1,0 +1,27 @@
+CREATE DATABASE IF NOT EXISTS patient_data_db;
+
+USE patient_data_db;
+
+CREATE TABLE IF NOT EXISTS patient_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_name VARCHAR(255),
+    dob DATE,
+    treatment_date DATE,
+    injection VARCHAR(50),
+    exercise_therapy VARCHAR(50),
+    pain INT DEFAULT 0,
+    numbness INT DEFAULT 0,
+    tingling INT DEFAULT 0,
+    burning INT DEFAULT 0,
+    tightness INT DEFAULT 0,
+    blood_pressure VARCHAR(50),
+    hr VARCHAR(50),
+    weight VARCHAR(50),
+    height VARCHAR(50),
+    spo2 VARCHAR(50),
+    temperature VARCHAR(50),
+    blood_glucose VARCHAR(50),
+    respiration VARCHAR(50)
+);
+
+CREATE INDEX idx_patient_name ON patient_data (patient_name);
