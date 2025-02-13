@@ -22,7 +22,6 @@ Before running the code, you'll need to install the necessary dependencies. Thes
 ### Installation Steps:
 You can install the required libraries using the following commands:
 
-```bash
 !pip install opencv-python-headless
 !pip install pytesseract
 !pip install numpy
@@ -85,3 +84,4 @@ Sharpening – to enhance the edges and details of the image for clearer text ex
 OCR Text Extraction – using Tesseract OCR to convert image content into structured text.
 Text Grouping and Line Formation – grouping recognized words into lines for easier analysis.
 These methods were applied to extract the maximum amount of information while considering image quality and the limitations of OCR technology.
+
